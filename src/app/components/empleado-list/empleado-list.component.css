@@ -1,0 +1,11 @@
+
+
+input[type=radio] {
+    width: 16px;
+    height: 16px;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
