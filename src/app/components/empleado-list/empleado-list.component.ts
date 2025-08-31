@@ -22,6 +22,17 @@ export class EmpleadoListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  obtenerTotalEmpleados(): number {
+    return this.listEmpleados.length;
+  }
+  obtenerTotalFemenino(): number {
+    return this.listEmpleados.filter(emp => emp.sexo === 'Femenino').length;
+  }
+
+  obtenerTotalMasculino(): number {
+    return this.listEmpleados.filter(emp => emp.sexo === 'Masculino').length;
+  }
+
 }
 
 
